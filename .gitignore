@@ -1,0 +1,15 @@
+# Generated files
+landing-*/
+initial.md
+*-prp.md
+/research/
+
+# Test outputs
+*.png
+*.jpg
+test-*/
+
+# System
+.DS_Store
+node_modules/
+.env
