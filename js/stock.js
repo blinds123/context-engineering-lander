@@ -1,4 +1,3 @@
-// Stock Management with animations
 class StockManager {
     constructor(initial = 47) {
         this.initial = initial;

@@ -1,4 +1,3 @@
-// Countdown Timer with LocalStorage persistence
 class CountdownTimer {
     constructor(minutes = 15) {
         this.duration = minutes * 60 * 1000;
@@ -43,6 +42,6 @@ class CountdownTimer {
     
     onExpire() {
         clearInterval(this.interval);
-        document.getElementById('countdown-timer').innerHTML = '<p class="expired">OFFER EXPIRED - Refresh for new timer</p>';
+        document.getElementById('countdown-timer').innerHTML = '<p class="expired">OFFER EXPIRED</p>';
     }
 }
