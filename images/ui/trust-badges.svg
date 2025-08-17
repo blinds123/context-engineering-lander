@@ -1,0 +1,22 @@
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+        <!-- SSL Secure -->
+        <g transform="translate(0, 0)">
+            <circle cx="30" cy="30" r="25" fill="#000"/>
+            <text x="30" y="35" text-anchor="middle" fill="white" font-size="20">🔒</text>
+        </g>
+        <!-- Verified -->
+        <g transform="translate(60, 0)">
+            <circle cx="30" cy="30" r="25" fill="#000"/>
+            <text x="30" y="35" text-anchor="middle" fill="white" font-size="20">✓</text>
+        </g>
+        <!-- Fast Ship -->
+        <g transform="translate(120, 0)">
+            <circle cx="30" cy="30" r="25" fill="#000"/>
+            <text x="30" y="35" text-anchor="middle" fill="white" font-size="20">🚚</text>
+        </g>
+        <!-- Returns -->
+        <g transform="translate(180, 0)">
+            <circle cx="30" cy="30" r="25" fill="#000"/>
+            <text x="30" y="35" text-anchor="middle" fill="white" font-size="20">↩️</text>
+        </g>
+    </svg>

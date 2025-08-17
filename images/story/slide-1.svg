@@ -1,0 +1,11 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="bg0" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#d409b3;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#bg0)"/>
+            <text x="150" y="180" text-anchor="middle" fill="white" font-size="28" font-weight="bold">We Found 47 Pairs</text>
+            <text x="150" y="220" text-anchor="middle" fill="white" font-size="18">In Margiela's Warehouse</text>
+        </svg>
