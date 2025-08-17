@@ -1,360 +1,419 @@
-# 🚀 COMPLETE LANDING PAGE GENERATOR - MAISON MARGIELA FREE + SHIPPING
+# 🚀 MAISON MARGIELA JEANS - FREE + SHIPPING LANDING PAGE GENERATOR V2.0
 
-## PRODUCT CONFIGURATION
-- **Product URL**: https://www.maisonmargiela.com/en-au/twist-wide-leg-jeans-S52LA0243M30016961.html
-- **Product Name**: Maison Margiela Twist Wide Leg Jeans
-- **Retail Price**: $990 AUD
-- **Offer Price**: FREE (Just pay $19.95 shipping)
-- **Stock Count**: 47 pairs
-- **Sizes Available**: 26, 28, 30, 32, 34, 36, 38, 40
-- **Timer Duration**: 15 minutes
-- **Viewer Count**: 237-289 (fluctuating)
+## CRITICAL: ONE-SHOT GENERATION REQUIREMENTS
 
-## 21 SECTIONS TO GENERATE (WITH EXACT SPECIFICATIONS)
+This document contains COMPLETE specifications to generate a 7,500+ line production-ready landing page in ONE EXECUTION without any additional prompting. Follow EVERY instruction precisely.
 
-### 1. **Fake TikTok Hero Video**
+## 🎯 OBJECTIVE
+
+Generate a COMPLETE high-converting landing page for Maison Margiela Twist Wide Leg Jeans using the "free plus shipping" offer model that:
+- Contains 7,500+ lines of HTML (matching reference implementation)
+- Implements ALL 21 sections completely  
+- Uses REAL product imagery (not placeholders)
+- Achieves 15%+ conversion rate
+- Loads in <2 seconds
+- Works perfectly on mobile (390x844px primary)
+
+## 📋 MANDATORY REQUIREMENTS
+
+### File Structure Required
 ```
-Structure:
-- Full screen (390x844px mobile)
-- Background: Product video screenshot
-- Overlay: Complete TikTok UI
-  - Right sidebar: Like (234.5K), Comment (8,947), Share icons
-  - Bottom: Username (@fashioninsider), Caption, Music
-  - Play button center
-Assets to Generate:
-- Product screenshot from actual site
-- TikTok UI elements (SVG)
-- Avatar circles
-- Engagement numbers
-```
-
-### 2. **Live Viewers Badge**
-```
-Position: Fixed top-right
-Style: Red background, white text
-Content: "[237] watching now" with pulsing dot
-Animation: Count fluctuates every 5 seconds
-Range: 200-300 viewers
+/
+├── index.html (7,500+ lines)
+├── generate-complete.js (auto-generator script)
+├── css/
+│   └── styles.css (2,000+ lines)
+├── js/
+│   ├── timer.js (countdown with localStorage)
+│   ├── stock.js (inventory management)
+│   ├── carousel.js (all carousels)
+│   ├── popup.js (popup management)
+│   └── analytics.js (tracking)
+└── images/
+    ├── product/ (real product images)
+    ├── tiktok/ (video thumbnails)
+    └── ui/ (interface elements)
 ```
 
-### 3. **Video Carousel**
-```
-Content: 3 TikTok video screenshots
-Images to Generate:
-- Screenshot 1: Product on model
-- Screenshot 2: Unboxing video
-- Screenshot 3: Outfit styling
-Features: Swipeable, dots indicator
-```
+## 🛠️ IMPLEMENTATION STEPS
 
-### 4. **Webinar Story (6 Slides)**
-```
-Slide 1: "We Found 47 Pairs in Margiela's Warehouse"
-Slide 2: "Worth $990 Each at Barneys"
-Slide 3: "Instead of Marking Up 300%..."
-Slide 4: "We're Giving Them Away FREE"
-Slide 5: "You Just Cover $19.95 Shipping"
-Slide 6: "Once They're Gone, They're Gone Forever"
-Each slide: Gradient background, bold text, swipeable
-```
+### STEP 1: Create Auto-Generator Script
+Create `generate-complete.js` that:
+1. Generates 7,500+ lines of HTML
+2. Creates all CSS files
+3. Builds all JavaScript modules
+4. Outputs statistics
 
-### 5. **TikTok Reviews Section**
-```
-Generate 10 comments:
-@sarah_styles: "OMG I GOT MINE!! They're actually real Margiela 😭"
-@fashionista22: "RUNNING to get these before they sell out!!"
-@luxelife: "The twist seam is everything! Quality is insane"
-@milanvibes: "Size 30 already gone 😭 got 32 instead"
-@denimqueen: "These retail for $990 at Barneys confirmed"
-@tokyostreet: "Japanese denim quality is unmatched"
-@vintage_finds: "Better than my vintage Margielas tbh"
-@hypebeast101: "Copped 2 pairs, this deal is insane"
-@runway_ready: "Wearing these to fashion week!!"
-@thrifted_lux: "Can't believe this is real, just got shipping confirmation"
-Each with: Avatar, likes count, timestamp
-```
-
-### 6. **Size Predictor Chart**
-```
-SVG Chart showing:
-- X-axis: Sizes (26-40)
-- Y-axis: Availability
-- Colors: Red (sold out), Yellow (low stock), Green (available)
-- Data: 26(SOLD), 28(3), 30(8), 32(12), 34(5), 36(SOLD), 38(2), 40(7)
-```
-
-### 7. **Countdown Timer**
-```
-Display: HH:MM:SS format
-Start: 00:14:59
-Persistence: LocalStorage
-Warning at: 5 minutes (turns red)
-Expiry action: Show "EXPIRED - Refresh for new timer"
-```
-
-### 8. **Stock Counter**
-```
-Display: Large number "47"
-Progress bar: 47% filled
-Updates: Decrements every 30-90 seconds randomly
-Persistence: LocalStorage
-Alert: At 10 items turns red
-```
-
-### 9. **Trustpilot Section**
-```
-Rating: 4.9/5 stars
-Review count: 2,847 reviews
-Background: Trustpilot green (#00b67a)
-Display: 5 star icons, rating number
-```
-
-### 10. **Payment Methods**
-```
-Icons to display:
-- Visa
-- Mastercard
-- Amex
-- PayPal
-- Apple Pay
-- Google Pay
-- Afterpay
-- Klarna
-Layout: Horizontal grid
-```
-
-### 11. **Free Shipping Badge**
-```
-Icon: Truck emoji
-Text: "FREE SHIPPING on orders over $19.95"
-Background: Green gradient
-Position: After payment methods
-```
-
-### 12. **30-Day Guarantee**
-```
-Icon: Shield in gold circle
-Title: "30-Day Money Back Guarantee"
-Subtext: "Not satisfied? Full refund, no questions"
-Style: Centered, prominent
-```
-
-### 13. **Price Comparison**
-```
-Layout: Side by side boxes
-Left: "Retail: $990" (strikethrough)
-Right: "Your Price: FREE + $19.95 shipping"
-Savings: "You Save $970.05 (98% OFF)"
-Background: Light red for savings
-```
-
-### 14. **Size Selector**
-```
-Grid: 4x2 for sizes
-States: Available, Selected, Sold Out
-Sold out: 26, 36, 38 (diagonal line through)
-Low stock indicators: 28 (3 left), 34 (5 left)
-Interaction: Click to select, auto-scroll to checkout
-```
-
-### 15. **Sticky Checkout Button**
-```
-Text: "CLAIM FREE JEANS → PAY $19.95 SHIPPING"
-Position: Fixed bottom
-Style: Black background, white text
-Animation: Pulse every 3 seconds
-Mobile: Full width minus padding
-```
-
-### 16. **Trust Badges Row**
-```
-Badges:
-- SSL Secure (lock icon)
-- Verified Seller (checkmark)
-- Fast Shipping (lightning)
-- 60-Day Returns (calendar)
-Layout: 4 columns on mobile
-```
-
-### 17. **XL Popup (15 seconds)**
-```
-Trigger: 15 seconds after page load
-Content:
-- Title: "⚡ LAST CHANCE!"
-- Body: "Only 47 pairs at this price"
-- Price: "FREE (Just $19.95 shipping)"
-- CTA: "CLAIM YOURS NOW"
-Size: 90% screen width, centered
-```
-
-### 18. **Celebrity Wall**
-```
-Title: "Worn By Fashion Icons"
-Grid: 3x2 celebrity names
-Names: Bella H., Kendall J., Gigi H., Hailey B., Rosie HW., Zendaya
-Style: Gradient background boxes
-```
-
-### 19. **Before/After Transformation**
-```
-Left image: "Regular Jeans" (generic photo)
-Right image: "Margiela Magic" (product photo)
-Labels: BEFORE/AFTER badges
-Effect: Hover to zoom
-```
-
-### 20. **Bundle Upsell**
-```
-Title: "COMPLETE THE LOOK"
-Offer: "Add matching pieces 50% off"
-Items: Top ($495), Bag ($890), Shoes ($650)
-Note: "Available at checkout only!"
-Border: Dashed red border
-```
-
-### 21. **Footer**
-```
-Links: Privacy | Terms | Contact | Returns
-Copyright: "© 2024 Fashion Deals"
-Disclaimer: "Not affiliated with Maison Margiela"
-Style: Dark background, white text
-```
-
-## ASSET GENERATION REQUIREMENTS
-
-### Product Images (To Extract/Generate):
-```
-/images/product/
-- margiela-jeans-main.jpg (from website)
-- margiela-jeans-square.jpg (cropped version)
-- margiela-jeans-detail.jpg (twist seam close-up)
-- margiela-jeans-model.jpg (on model if available)
-- margiela-jeans-flat.jpg (flat lay)
-```
-
-### Story Slides (To Generate):
-```
-/images/story/
-- slide-1-warehouse.jpg (warehouse visual + text)
-- slide-2-retail.jpg (Barneys price tag visual)
-- slide-3-markup.jpg (price comparison graphic)
-- slide-4-free.jpg (FREE in bold letters)
-- slide-5-shipping.jpg ($19.95 shipping visual)
-- slide-6-gone.jpg (sold out graphic)
-```
-
-### Review Screenshots (To Generate):
-```
-/images/reviews/
-- tiktok-comment-1.jpg through tiktok-comment-10.jpg
-Each with: Username, avatar, comment text, likes
-```
-
-### UI Elements (To Generate):
-```
-/images/ui/
-- tiktok-overlay.svg (complete UI)
-- play-button.svg
-- trust-badges.svg (all 4 badges)
-- payment-icons.svg (all payment methods)
-```
-
-## JAVASCRIPT FILES TO CREATE
-
-### 1. **carousel.js**
+### STEP 2: Product Configuration
 ```javascript
-// Handle all carousels (product, story, reviews)
-// Touch support, auto-play, dots navigation
-// Smooth transitions, infinite loop
+const CONFIG = {
+    product: {
+        name: 'Maison Margiela Twist Wide Leg Jeans',
+        sku: 'S52LA0243M30016961',
+        retailPrice: 990,
+        offerPrice: 0,
+        shippingPrice: 19.95,
+        currency: 'USD',
+        sizes: {
+            available: ['28', '30', '32', '34', '40'],
+            soldOut: ['26', '36', '38'],
+            lowStock: { '28': 3, '30': 8, '32': 12, '34': 5, '40': 7 }
+        }
+    },
+    marketing: {
+        stockStart: 100,
+        stockCurrent: 47,
+        viewersMin: 200,
+        viewersMax: 300,
+        timerMinutes: 15,
+        reviews: 2847,
+        rating: 4.9,
+        soldThisWeek: 3847
+    }
+};
 ```
 
-### 2. **timer.js**
+## 📐 ALL 21 SECTIONS (MANDATORY - NO SHORTCUTS)
+
+### Section 1: Live Viewers Badge (Floating)
+```html
+<div class="live-viewers-badge" id="live-viewers">
+    <div class="live-dot"></div>
+    <span id="viewer-count">237</span>
+    <span>watching now</span>
+</div>
+```
+- Position: fixed, top-right
+- Updates every 5 seconds
+- Pulse animation on dot
+
+### Section 2: Fake TikTok Hero Video (844px height)
+```html
+<section class="tiktok-hero">
+    <!-- Full TikTok UI recreation -->
+    <!-- Profile, actions sidebar, caption, music -->
+</section>
+```
+- Exact TikTok interface recreation
+- Play button overlay
+- Like/comment/share actions
+- Music disc animation
+
+### Section 3: Video Carousel (5 videos)
+```html
+<section class="video-carousel-section">
+    <!-- TikTok video thumbnails -->
+</section>
+```
+- Swipeable carousel
+- View counts and stats
+- Play button overlays
+
+### Section 4: Webinar Story (6 slides)
+```html
+<section class="story-section">
+    <!-- 6 story slides explaining offer -->
+</section>
+```
+Slides:
+1. "We Found 47 Pairs"
+2. "Worth $990 Each"
+3. "Instead of 300% Markup"
+4. "We're Giving Them FREE"
+5. "Just $19.95 Shipping"
+6. "Once Gone, Gone Forever"
+
+### Section 5: TikTok Reviews (10+ comments)
+```html
+<section class="tiktok-reviews-section">
+    <!-- Real-looking TikTok comments -->
+</section>
+```
+- Username, time, likes
+- Reply buttons
+- Verified badges
+
+### Section 6: Size Predictor Chart (SVG)
+```html
+<section class="size-predictor-section">
+    <svg viewBox="0 0 400 300">
+        <!-- Bar chart showing stock by size -->
+    </svg>
+</section>
+```
+- Color-coded bars (green/yellow/red)
+- Real-time stock levels
+
+### Section 7: Countdown Timer
+```html
+<section class="countdown-section">
+    <div id="countdown-timer">
+        <!-- HH:MM:SS display -->
+    </div>
+</section>
+```
+- LocalStorage persistence
+- Warning state at 5 minutes
+- Expires after 15 minutes
+
+### Section 8: Stock Counter
+```html
+<section class="stock-counter-section">
+    <div class="stock-display">
+        <span id="stock-number">47</span>
+    </div>
+    <div class="stock-bar"></div>
+</section>
+```
+- Real-time decrements
+- Progress bar visualization
+- Recent activity feed
+
+### Section 9: Trustpilot Reviews
+```html
+<section class="trustpilot-section">
+    <!-- 5-star reviews -->
+</section>
+```
+- 4.9/5 rating
+- 2,847 reviews
+- Review cards with dates
+
+### Section 10: Payment Methods
+```html
+<section class="payment-section">
+    <!-- Payment icons grid -->
+</section>
+```
+- Visa, Mastercard, Amex, PayPal
+- Apple Pay, Google Pay
+- Security badges
+
+### Section 11: Free Shipping Badge
+```html
+<section class="shipping-badge-section">
+    <div class="shipping-badge">
+        🚚 FREE EXPRESS SHIPPING
+    </div>
+</section>
+```
+
+### Section 12: Guarantee
+```html
+<section class="guarantee-section">
+    <div class="guarantee-badge">
+        🛡️ 60-Day Money Back Guarantee
+    </div>
+</section>
+```
+
+### Section 13: Price Comparison
+```html
+<section class="price-comparison-section">
+    <div class="retail-price">$990</div>
+    <div class="your-price">FREE</div>
+    <div class="savings">You Save $970.05</div>
+</section>
+```
+
+### Section 14: Size Selector
+```html
+<section class="size-selector-section">
+    <div class="size-grid">
+        <!-- Size buttons with stock indicators -->
+    </div>
+</section>
+```
+
+### Section 15: Trust Badges
+```html
+<section class="trust-badges-section">
+    <!-- SSL, Verified, Authentic badges -->
+</section>
+```
+
+### Section 16: Celebrity Wall
+```html
+<section class="celebrity-section">
+    <!-- Celebrity cards -->
+</section>
+```
+- Bella Hadid, Kendall Jenner, Gigi Hadid
+- Hailey Bieber, Rosie HW, Zendaya
+
+### Section 17: Before/After
+```html
+<section class="before-after-section">
+    <!-- Transformation comparison -->
+</section>
+```
+
+### Section 18: Bundle Upsell
+```html
+<section class="bundle-section">
+    <!-- Matching items at 50% off -->
+</section>
+```
+
+### Section 19: FAQ Section
+```html
+<section class="faq-section">
+    <!-- Common questions -->
+</section>
+```
+
+### Section 20: Footer
+```html
+<footer class="footer">
+    <!-- Links and disclaimer -->
+</footer>
+```
+
+### Section 21: Sticky Checkout Button
+```html
+<div class="sticky-checkout">
+    <button id="checkout-btn">
+        CLAIM FREE JEANS → PAY $19.95 SHIPPING
+    </button>
+</div>
+```
+
+## 🎨 STYLE REQUIREMENTS
+
+### Critical CSS Variables
+```css
+:root {
+    --primary: #000000;
+    --secondary: #FFFFFF;
+    --accent: #FF0000;
+    --success: #00C851;
+    --warning: #FFD700;
+    --danger: #DC3545;
+}
+```
+
+### Mobile-First Breakpoints
+```css
+/* Mobile: 320px - 767px */
+/* Tablet: 768px - 1023px */
+/* Desktop: 1024px+ */
+```
+
+## 💻 JAVASCRIPT MODULES
+
+### timer.js
 ```javascript
-// Countdown from 15 minutes
-// LocalStorage persistence
-// Expiry handling
-// Warning states
+class CountdownTimer {
+    constructor(minutes = 15) {
+        // LocalStorage persistence
+        // Updates every second
+        // Warning state at 5 minutes
+    }
+}
 ```
 
-### 3. **popup.js**
+### stock.js
 ```javascript
-// XL popup after 15 seconds
-// Exit intent detection
-// Mobile scroll-up trigger
-// One-time per session
+class StockManager {
+    constructor(initial = 47) {
+        // Random decrements
+        // Notification system
+        // LocalStorage save
+    }
+}
 ```
 
-### 4. **stock.js**
+### popup.js
 ```javascript
-// Decrement stock randomly
-// Update progress bar
-// LocalStorage persistence
-// Low stock alerts
+class PopupManager {
+    constructor() {
+        // Exit intent detection
+        // Time-based triggers
+        // Session storage tracking
+    }
+}
 ```
 
-### 5. **analytics.js**
-```javascript
-// GA4 integration
-// Facebook Pixel
-// Event tracking
-// Conversion tracking
+## 🚀 GENERATION COMMAND
+
+```bash
+# Clone repository
+git clone https://github.com/[username]/context-engineering-lander.git
+cd context-engineering-lander
+
+# Run generator
+node generate-complete.js
+
+# Start server
+python3 -m http.server 8000
+
+# Open browser
+open http://localhost:8000
 ```
 
-## CSS REQUIREMENTS
+## ✅ SUCCESS CRITERIA
 
-### Mobile-First Design:
-- Primary: 390px width
-- Max-width: 428px
-- Font-size: 16px base
-- Touch targets: 44px minimum
-- Sticky elements: Checkout button
+The generated landing page MUST have:
+- [ ] 7,500+ lines of HTML
+- [ ] All 21 sections fully implemented
+- [ ] Real product imagery (not placeholders)
+- [ ] Complete JavaScript functionality
+- [ ] Full CSS styling (2,000+ lines)
+- [ ] Mobile responsive (390x844px)
+- [ ] <2 second load time
+- [ ] LocalStorage persistence
+- [ ] Exit intent popups
+- [ ] Countdown timer
+- [ ] Stock management
+- [ ] Smooth animations
+- [ ] Analytics integration
+- [ ] Schema.org markup
+- [ ] Open Graph tags
+- [ ] Twitter Cards
 
-### Animations:
-- Pulse: Viewer count, CTA buttons
-- Slide: Carousels
-- Fade: Popups
-- Bounce: Urgency elements
+## ⚠️ CRITICAL WARNINGS
 
-### Colors:
-- Primary: Black (#000)
-- Accent: Red (#FF0000)
-- Success: Green (#00C851)
-- Warning: Yellow (#FFD700)
-- Background: White (#FFF)
+1. **NO PLACEHOLDERS**: Every image must be real or generated
+2. **NO SHORTCUTS**: All 21 sections must be complete
+3. **NO INLINE STYLES**: Use proper CSS architecture
+4. **NO BASIC HTML**: Must be 7,500+ lines
+5. **NO MISSING FEATURES**: Every interaction must work
 
-## PERFORMANCE REQUIREMENTS
-- Page Speed: <2 seconds
-- Image optimization: WebP with JPG fallback
-- Lazy loading: Below-fold images
-- Minification: CSS and JS
-- CDN: All assets
+## 📊 EXPECTED OUTPUT
 
-## CONVERSION OPTIMIZATION
-- Above-fold: Hero + Timer + Stock
-- Micro-commitments: Size selection first
-- Social proof: Every 3 sections
-- Urgency: Timer + Stock + Viewers
-- Trust: Badges + Guarantee + Reviews
+When complete, you should see:
+```
+✅ Generated Complete Landing Page
+📊 Statistics:
+   - HTML Lines: 7,523
+   - Total Size: 284.35 KB
+   - Sections: 21 (ALL COMPLETE)
+   - Features: 100% Implementation
 
-## TESTING CHECKLIST
-- [ ] All images load correctly
-- [ ] Timer counts down properly
-- [ ] Stock decrements work
-- [ ] Popups trigger on time
-- [ ] Mobile responsive
-- [ ] Checkout button works
-- [ ] Size selection functional
-- [ ] Carousels swipeable
-- [ ] Analytics firing
-- [ ] Page speed <2s
+📁 Files Created:
+   - index.html (main landing page)
+   - css/styles.css (complete styles)
+   - js/timer.js (countdown timer)
+   - js/stock.js (stock management)
+   - js/popup.js (popup manager)
+   - js/carousel.js (carousel handler)
+   - js/analytics.js (tracking)
 
-## DEPLOYMENT
-- GitHub Pages ready
-- Netlify compatible
-- CloudFlare CDN
-- SSL required
-- Mobile-first indexing
+🚀 Ready for production deployment!
+```
 
----
+## 🎯 FINAL CHECKLIST
 
-**This specification will generate a complete, production-ready landing page with all assets, functionality, and optimizations.**
+Before considering complete, verify:
+- [ ] Lines of code: 7,500+ ✓
+- [ ] All 21 sections: Present ✓
+- [ ] JavaScript modules: Working ✓
+- [ ] CSS architecture: Complete ✓
+- [ ] Mobile responsive: Perfect ✓
+- [ ] Load time: <2 seconds ✓
+- [ ] Conversion optimized: 15%+ ✓
+- [ ] Production ready: YES ✓
+
+## END OF SPECIFICATIONS
+
+Execute `node generate-complete.js` to create the FULL implementation. No additional steps or prompts should be needed. The generator will create everything automatically.
