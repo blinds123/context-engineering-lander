@@ -1,0 +1,137 @@
+/* Custom styles for landing page */
+
+/* Font imports handled in HTML */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(239, 68, 68, 0.8);
+    }
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Urgency colors */
+.urgency-red {
+    color: #ef4444;
+    animation: pulse 2s infinite;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .fixed.top-4.right-4 {
+        top: 1rem;
+        right: 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* High contrast for accessibility */
+@media (prefers-contrast: high) {
+    button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Loading states */
+.loading {
+    position: relative;
+    color: transparent;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form focus states */
+input:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Size button selected state */
+.size-btn.selected {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Trust badges */
+.trust-badges img {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.trust-badges img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Sticky CTA on mobile */
+@media (max-width: 640px) {
+    .sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background: white;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 40;
+    }
+}
+
+/* Print styles */
+@media print {
+    .no-print,
+    #live-viewers,
+    #exit-popup,
+    #fomo-popup {
+        display: none !important;
+    }
+}

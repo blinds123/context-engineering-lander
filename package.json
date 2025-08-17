@@ -1,0 +1,26 @@
+{
+  "name": "maison-margiela-lander",
+  "version": "1.0.0",
+  "description": "High-converting landing page for Maison Margiela free plus shipping offer",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "docker:build": "docker build -t mm-lander .",
+    "docker:run": "docker run -p 8080:80 mm-lander",
+    "docker:compose": "docker-compose up",
+    "test": "playwright test",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "landing-page",
+    "conversion",
+    "e-commerce",
+    "fashion"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "gh-pages": "^6.0.0"
+  }
+}
